@@ -9,14 +9,14 @@ Integrantes :
 
 ### Entregables
 
-Dillinger is currently extended with the following plugins. Instructions on how to use them in your own application are linked below.
+Documentos 
 
 | Entregable | URL |
 | ------ | ------ |
-| Requerimientos funcionales y no funcionales | [http://google.com][URL] |
-| Casos de uso | [http://google.com][URL] |
-| Arquitectura y Diseño | [http://google.com][URL] |
-| Codigo | [http://google.com][URL] |
-| Aplicacion | [http://google.com][URL] |
+| Requerimientos funcionales y no funcionales | [URL] |
+| Casos de uso | [URL] |
+| Arquitectura y Diseño | [URL] |
+| Codigo | [URL] |
+| Aplicacion | [URL] |
 
 ### Proyecto IReport
