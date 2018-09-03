@@ -4,7 +4,7 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<!-- <ion-header>
 
   <ion-navbar>
     <ion-title>Login</ion-title>
@@ -14,5 +14,75 @@
 
 
 <ion-content padding>
+  
+  <button ion-button>Default</button>
+</ion-content> -->
+
+<ion-content padding class="animated fadeIn login auth-page">
+
+
+  <!-- data -->
+  <ion-grid class="login-content">
+    <ion-row>
+      <ion-col col-12 text-center class="animated fadeInDown">
+          
+          <h2 ion-text class="text-primary">
+            <strong>IReport</strong>
+          </h2>
+          <div class="logo"></div>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <form class="list-form">
+          <ion-item>
+            <ion-label floating>
+              <ion-icon name="mail" item-start class="text-primary"></ion-icon>
+              Email
+            </ion-label>
+            <ion-input type="email" [(ngModel)]="Email" name="Email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>
+              <ion-icon name="lock" item-start class="text-primary"></ion-icon>
+              Password
+            </ion-label>
+            <ion-input type="password" [(ngModel)]="Password" name="Password"></ion-input>
+          </ion-item>
+        </form>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-12>
+        <button ion-button icon-start block color="dark" tappable (click)="login()">
+          <ion-icon name="log-in"></ion-icon>
+          SIGN IN
+        </button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-4>
+        <button ion-button icon-only block class="btn-facebook" (click)="facebookLogin()">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button icon-only block class="btn-twitter" (click)="twitterLogin()">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </button>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button icon-only block class="btn-gplus" (click)="googleLogin()">
+          <ion-icon name="logo-googleplus"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <div text-center margin-top>
+        <span ion-text color="secondary" tappable (click)="register()">New here? <strong>Sign up</strong></span>
+      </div>
+  </ion-grid>
 
 </ion-content>

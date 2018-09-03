@@ -13,6 +13,13 @@ import { LoginPage } from '../pages/login/login';
 import { MapPage } from '../pages/map/map';
 import { ReportFormPage } from '../pages/report-form/report-form';
 import { WallPage } from '../pages/wall/wall';
+import { AuthProvider } from '../providers/auth/Auth.service';
+
+// Firebase
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { environment } from '../environments/environment';
+import { AngularFireAuthModule } from 'angularfire2/auth';
 
 @NgModule({
   declarations: [
@@ -27,6 +34,10 @@ import { WallPage } from '../pages/wall/wall';
   ],
   imports: [
     BrowserModule,
+    
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
     IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
@@ -43,7 +54,8 @@ import { WallPage } from '../pages/wall/wall';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AuthProvider
   ]
 })
 export class AppModule {}

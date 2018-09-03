@@ -25,6 +25,9 @@ $app-direction: ltr;
 
 
 
+$text-color: #4c6df9;
+$background-color: #fff;
+
 // Named Color Variables
 // --------------------------------------------------
 // Named colors makes it easy to reuse colors on various components.
@@ -34,11 +37,11 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary: #4c6df9,
+  secondary: #5b5ef4,
+  danger: #f53d3d,
+  light: #75C4FD,
+  dark: #0039a2
 );
 
 
