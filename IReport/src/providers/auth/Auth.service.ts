@@ -74,8 +74,8 @@ export class AuthProvider {
     return this.firebaseAuth.auth.signInWithPopup(provider)
       .then((credential) =>  {
           this.authState = credential.user;
-          console.log(this.authState);
-          this.updateUserData();
+          console.log("fasdfas" ,this.authState);
+          this.updateUserData(this.authState.displayName);
       })
       .catch(error => {
         console.log(error);

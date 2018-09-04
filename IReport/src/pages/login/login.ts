@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 import { AuthProvider } from '../../providers/auth/Auth.service';
-
+import { HomePage } from '../home/home';
+import { ToastController } from 'ionic-angular';
 /**
  * Generated class for the LoginPage page.
  *
@@ -20,7 +21,7 @@ export class LoginPage {
   Password: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams,
-              public auth: AuthProvider ) {
+              public auth: AuthProvider, private toastCtrl: ToastController,) {
   }
 
   login(){
@@ -28,7 +29,21 @@ export class LoginPage {
   }
 
   googleLogin() {
-    this.auth.googleLogin();
+    this.auth.googleLogin().then(()=>{
+      if (this.auth.authenticated){
+        this.navCtrl.setRoot(HomePage);
+      }else{
+        let toast = this.toastCtrl.create({
+          message: 'Usuario incorrecto',
+          duration: 3000,
+          position: 'bottom'
+        }).present();
+      }
+    });
+    
+
+
+    
   }
 
   facebookLogin() {
