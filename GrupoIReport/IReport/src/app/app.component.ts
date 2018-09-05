@@ -34,7 +34,10 @@ export class MyApp {
     ];
 
   }
-
+  logOut(){
+    this.splashScreen.hide();
+    this.nav.setRoot(LoginPage);
+  }
   initializeApp() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
