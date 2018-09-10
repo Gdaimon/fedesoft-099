@@ -8,11 +8,14 @@ Integrantes :
  - Maikol Bonilla Gil
  - Sergio Alejandro Diaz Pinilla
  - Julian Camilo Mendez Corredor
-### Grupo 2
+### Jabokapp
 
 Integrantes :
 
- - Persona
+ - Laura Natalia Lugo Florez
+ - Jaime Edinson Neira Suescun
+ - Diego Alejandro Vanegas Prada
+ - Samuel Antonio Cabezas Tibaquicha
 
 ### Grupo 3
 

@@ -1,0 +1,7 @@
+{
+  "name": "Jabokapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
