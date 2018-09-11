@@ -23,8 +23,8 @@ Integrantes :
  - Luis Alejandro González Montañez
  - Diego Alejandro Bejarano
  - Oscar Alejandro Lugo
- - Andrés 
- - Edixon  
+ - Andrés Tovar
+ - Edixon Javier Mora  
 
 ### Grupo 3
 
